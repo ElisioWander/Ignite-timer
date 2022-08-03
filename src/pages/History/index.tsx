@@ -11,7 +11,7 @@ export function History() {
       id: cycle.id,
       taskName: cycle.task,
       minutes: cycle.minutesAmount,
-      startDate: formatDistanceToNow(cycle.startDate, {
+      startDate: formatDistanceToNow(new Date(cycle.startDate), {
         addSuffix: true,
         locale: ptBR,
       }),
